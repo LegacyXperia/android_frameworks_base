@@ -400,7 +400,17 @@ public class ActivityManager {
             // pixels on it that we'd really like to use hw drawing.
             return true;
         }
+        if (isForcedHighEndGfx()) {
+            return true;
+        }
         return false;
+    }
+
+    /**
+     * @hide
+     */
+    static public boolean isForcedHighEndGfx() {
+        return SystemProperties.getBoolean("persist.sys.force_highendgfx", false);
     }
 
     /**
