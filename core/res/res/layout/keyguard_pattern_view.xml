@@ -57,10 +57,6 @@
                 android:id="@+id/lockPatternView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginEnd="8dip"
-                android:layout_marginBottom="4dip"
-                android:layout_marginStart="8dip"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
                 android:contentDescription="@string/keyguard_accessibility_pattern_area" />
